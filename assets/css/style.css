@@ -125,6 +125,11 @@ footer {
     background-color: #3B4856;
     min-height: 120px;
     margin: 0;
+    padding: 20px;
+}
+
+footer h5 {
+    padding-bottom: 5px;
 }
 
 .cv-pdf i {
@@ -139,4 +144,26 @@ footer {
 
 .cv-pdf i:hover {
     color: #3498DB;
+}
+
+.social-links li a i {
+    margin: 0 5px;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem 0;
+    border-radius: 50%;
+    font-size:1rem;
+    line-height: 1px;
+    text-align: center;
+    color: #f2f2f2;
+    background-color: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    color: #3498DB;
+    background-color: white;
 }
