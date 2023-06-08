@@ -1,11 +1,13 @@
+/*------------------------------------ Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto:wght@400;700&display=swap');
+
 /*------------------------------------ Colors*/
 .bg-color-heading {
-    background-color: #676767;
+    background-color: #3B4856;
 }
 
 .menu-bg-home {
-    background-color: #3498db;
+    background-color: #3498DB;
 }
 
 .menu-bg-resume {
@@ -17,12 +19,31 @@
 }
 
 .menu-bg-download {
-    background-color: #D2739D;
+    background-color: #E168A0;
 }
+
 /*------------------------------------ General Settings*/
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: 'Newsreader', serif;
+    color: #f2f2f2;
 }
 
 /*------------------------------------ Header & Nav*/
@@ -39,9 +60,9 @@ header {
     background: url(../images/resume.jpg) no-repeat center;
     background-size: cover;
     min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 
 .name {
@@ -49,6 +70,7 @@ header {
     color: #fff;
     font-size: 4rem;
 }
+
 .title {
     font-family: 'Roboto', sans-serif;
     color: #f2f2f2;
@@ -62,7 +84,8 @@ header {
 #nav {
     margin: 0;
 }
-#nav > li {
+
+#nav>li {
     margin: 0;
     font-size: 14px;
     position: relative;
@@ -79,7 +102,7 @@ header {
     display: inline-block;
 }
 
-.menu-item a i{
+.menu-item a i {
     font-size: 29px;
     display: block;
     padding-bottom: 10px;
@@ -89,8 +112,31 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 /*------------------------------------ Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*------------------------------------ Footer*/
+
+footer {
+    background-color: #3B4856;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {
+    font-size: 20px;
+    color: #f2f2f2;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: #3498DB;
 }
