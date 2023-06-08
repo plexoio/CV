@@ -1,2 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader&family=Roboto:wght@400;700&display=swap');
 
+/*------------------------------------ Colors*/
+.bg-color-heading {
+    background-color: #676767;
+}
+
+.menu-bg-home {
+    background-color: #3498db;
+}
+
+.menu-bg-resume {
+    background-color: #EA6A4F;
+}
+
+.menu-bg-contact {
+    background-color: #00A78A;
+}
+
+.menu-bg-download {
+    background-color: #D2739D;
+}
+/*------------------------------------ General Settings*/
+
+/*------------------------------------ Header & Nav*/
+header {
+    margin: 0;
+}
+
+.heading {
+    padding: 10px 20px;
+
+}
+
+.logo {
+    background: url(../images/resume.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.name {
+    font-family: 'Newsreader', serif;
+    color: #fff;
+    font-size: 4rem;
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
+    font-size: 2rem;
+}
+
+.nav-list-container {
+    font-size: 0;
+}
+#nav > li {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*------------------------------------ Header & Nav*/
