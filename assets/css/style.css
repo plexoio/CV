@@ -22,10 +22,15 @@
     background-color: #E168A0;
 }
 
+.bg-reasons {
+    background-color: #fff;
+}
+
 /*------------------------------------ General Settings*/
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
 }
 
 h1,
@@ -46,6 +51,20 @@ h6 {
     color: #f2f2f2;
 }
 
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: 'Newsreader', serif;
+    margin: 25px auto 40px auto;
+}
 /*------------------------------------ Header & Nav*/
 header {
     margin: 0;
@@ -167,3 +186,5 @@ footer h5 {
     color: #3498DB;
     background-color: white;
 }
+
+/* Reasons section*/
