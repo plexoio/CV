@@ -197,3 +197,35 @@ footer h5 {
 .rasons-heading {
     margin-bottom: 15px;
 }
+
+/* Personal Info section*/
+
+.personal-info {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+.personal-info .key,
+.personal-info .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info .key p,
+.personal-info .value p{
+    margin: 0;
+}
+
+.personal-info .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+.personal-info .key p{
+    font-weight: bold;
+}
+.personal-info .value {
+    position: relative;
+    width: 60%;
+}
