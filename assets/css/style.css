@@ -71,7 +71,7 @@ header {
 }
 
 .heading {
-    padding: 25px 20px;
+    padding: 3%;
     height: 240px;
 }
 
@@ -188,3 +188,12 @@ footer h5 {
 }
 
 /* Reasons section*/
+
+.reasons-icon {
+    font-size: 26px;
+    color: #3498DB;
+}
+
+.rasons-heading {
+    margin-bottom: 15px;
+}
