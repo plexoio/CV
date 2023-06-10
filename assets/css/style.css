@@ -43,6 +43,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f2f2f2;
+    color: #020202;
 }
 
 h1,
@@ -52,6 +53,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    color: #3B4856;
 }
 
 .uppercase {
@@ -61,6 +63,10 @@ h6 {
 .general-sub {
     font-family: 'Newsreader', serif;
     color: #f2f2f2;
+    text-align: center;
+}
+.general-sub ~ p, ul {
+    text-align: center;
 }
 
 .row-table {
@@ -208,8 +214,12 @@ footer h5 {
     color: #3498DB;
 }
 
-.rasons-heading {
+.reasons-heading {
     margin-bottom: 15px;
+}
+
+.reasons-heading ~ p{
+    text-align: justify;
 }
 
 /* Personal Info section*/
@@ -257,6 +267,10 @@ footer h5 {
 
 .progress-section {
     margin: 40px;
+}
+
+.progress-type {
+    font-weight: 700;
 }
 
 /*Focus settings*/
