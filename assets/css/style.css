@@ -34,6 +34,10 @@
     background-color: #3498DB10;
 }
 
+.bg-contact {
+    background-color: #fff;
+}
+
 /*------------------------------------ General Settings*/
 
 body {
@@ -296,4 +300,39 @@ footer h5 {
 
 h4 {
     font-weight: bold;
+}
+
+/*Contact Section*/
+.contact-heading {
+    font-family: 'Newsreader', serif;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type='submit'] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #3498DB;
+    color: #fff;
+    border: 1px solid #3498DB;
+}
+
+/*Media Queries Section*/
+
+/*Contact Section*/
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
