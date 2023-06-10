@@ -54,6 +54,7 @@ h5,
 h6 {
     margin: 0;
     color: #3B4856;
+    text-align: center;
 }
 
 .uppercase {
@@ -63,7 +64,6 @@ h6 {
 .general-sub {
     font-family: 'Newsreader', serif;
     color: #f2f2f2;
-    text-align: center;
 }
 .general-sub ~ p, ul {
     text-align: center;
@@ -216,6 +216,7 @@ footer h5 {
 
 .reasons-heading {
     margin-bottom: 15px;
+    text-align: justify;
 }
 
 .reasons-heading ~ p{
@@ -289,6 +290,11 @@ footer h5 {
     padding: 0em 2em 2em 2em;
     position: relative;
     border-left: 1px solid #3B485680;
+    text-align: justify;
+}
+
+.timeline-item h4, p{
+    text-align: justify;
 }
 
 .timeline-item p {
