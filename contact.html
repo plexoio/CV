@@ -109,7 +109,7 @@
     <footer class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
-                <h5 class="uppercase general-sub">About</h5>
+                <h5 class="uppercase general-sub" id="element-focus" tabindex="0">About</h5>
                 <p class="inline-block text-white">This is a space where I will talk about my experience</p>
             </div>
             <div class="col-sm-4">
@@ -152,6 +152,15 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b0f4c7b367.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            var work_history = document.getElementById('element-focus');
+
+            if (work_history){
+                work_history.focus();
+            }
+        }
+    </script>
 </body>
 
 </html>
