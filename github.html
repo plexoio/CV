@@ -107,28 +107,18 @@
 
     <!--Content Section-->
     <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 bg-reasons section-column">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="section-heading uppercase">My Groups And Societies</h3>
-                    </div>
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
+                <h5 class="uppercase text-center">You can also search on other user profiles</h5>
+
+                <div class="center-form text-center">
+                    <input type="text" id="gh-username" value="plexoio" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+
                 </div>
 
-                <div class="row bg-color-contact">
-                    <div class="col">
-                        <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
-                        <h5 class="uppercase text-center">You can also search on other user profiles</h5>
-
-                        <div class="center-form">
-                            <input type="text" id="gh-username" value="plexoio" oninput="fetchGitHubInformation()" />
-                            <div id="gh-user-data"></div>
-                            <div id="gh-repo-data"></div>
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </section>
