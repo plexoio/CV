@@ -20,7 +20,7 @@ const userInformationHTML = (user) => {
 
 const reposInformationHTML = (repos) => {
     if (repos.length == 0) {
-        return `<div class="clearfix repo-list">No repos!</div>`
+        return `<div class="clearfix repo-list">No repos to show!</div>`
     };
 
     var listOfRepos = repos.map(function (repo) {
