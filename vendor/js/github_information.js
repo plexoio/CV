@@ -1,7 +1,7 @@
-function userInformationHTML(user) {
+const userInformationHTML = (user) => {
     return `
         <h2 class="my-3">${user.name}
-            <span class="small-name">
+            <span>
                 (@<a href="${user.html_url}" target="_blank">${user.login}</a>)
             </span>
         </h2>
@@ -16,22 +16,50 @@ function userInformationHTML(user) {
             <strong>Following</strong> ${user.following} |
             <strong>Repos:</strong> ${user.public_repos}</p>
         </div>`
-}
+};
+
+const reposInformationHTML = (repos) => {
+    if (repos.length == 0) {
+        return `<div class="clearfix repo-list">No repos!</div>`
+    };
+
+    var listOfRepos = repos.map(function (repo) {
+        return `<li>
+                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                </li>`;
+    });
+
+    return `<div class="clearfix repo-list">
+                <p>
+                    <strong>Repo list:</strong>
+                </p>
+                <ul>
+                    ${listOfRepos.join("\n")}
+                </ul>
+            </div>`
+};
+
 const fetchGitHubInformation = (event) => {
     var username = $('#gh-username').val();
+    console.log(`The value is: ${username}`);
     if (!username) {
-        $('#gh-user-data').html(`<h4 class="my-3">No usernameis empty!</h4>`);
+        $('#gh-user-data').html(`<h4 class="my-3">Search bar is empty!</h4>`);
         return; // stops the function before running the rest of the code in this scope
     }
 
     $('#gh-user-data').html(`<div id="loader" class="my-3"><img src="vendor/css/img/loader.gif" alt="loading"></div>`)
 
     $.when(
-        $.getJSON(`https://api.github.com/users/${username}`)
+        $.getJSON(`https://api.github.com/users/${username}`), // firstPromise
+        $.getJSON(`https://api.github.com/users/${username}/repos`) // secondPromise
     ).then(
-        function (response) {
-            var userData = response;
+        function (firstPromise, secondPromise) {
+            var userData = firstPromise[0]; // needed if promises >= 2
+            var reposData = secondPromise[0]; // needed if promises >= 2
             $('#gh-user-data').html(userInformationHTML(userData));
+            if (username) {
+                $('#gh-repo-data').html(reposInformationHTML(reposData));
+            }
         }, function (errorResponse) {
             if (errorResponse.status === 404) {
                 $('#gh-user-data').html(`<h2>No information found for ${username}</h2>`);
