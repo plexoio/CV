@@ -111,10 +111,12 @@
         <div class="row bg-color-contact">
             <div class="col">
                 <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
-                <h5 class="uppercase text-center">You can also search on other user profiles</h5>
-
-                <div class="center-form text-center">
-                    <input type="text" id="gh-username" value="plexoio" oninput="fetchGitHubInformation()" />
+                <!--<h5 class="uppercase text-center">You can also search on other user profiles</h5>-->
+                <div class="center-form pt-0 text-center">
+                    <div class="mb-3">
+                        <button class="btn btn-info" onclick="fetchGitHubInformation()">Show Github</button>
+                    </div>
+                    <input type="text" id="gh-username" class="form-control" value="plexoio" readonly />
                     <div id="gh-user-data"></div>
                     <div id="gh-repo-data"></div>
 

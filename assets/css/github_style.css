@@ -164,8 +164,11 @@ img {
   padding: 5px 8px;
   font-size: 1.4em;
   color: #666;
-  max-width: 550px;
+  position: relative;
+  width: auto;
   margin-bottom: 15px;
+  text-align: center;
+  display: inline-block;
 }
 
 #gh-submit {
