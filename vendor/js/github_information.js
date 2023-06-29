@@ -40,6 +40,7 @@ const reposInformationHTML = (repos) => {
 };
 
 const fetchGitHubInformation = (event) => {
+    $('#hide-me').addClass('d-none');
     var username = $('#gh-username').val();
     if (!username) {
         $('#gh-repo-data').html('');
