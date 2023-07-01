@@ -7,6 +7,10 @@ function sendMail(contactForm, event) { // as 'this' on the form tag
     }).then(
         function (response) {
             console.log('Success', response);
+            $('#email_sent').html(`<div class="col alert alert-primary text-center" role="alert">
+            Email sent successfully! I'll get back to you shortly!
+          </div>`);
+          $('.center-form').addClass('d-none');
         }, function (error) {
             console.log('Failed', error);
         }

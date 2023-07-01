@@ -338,7 +338,6 @@ h4 {
 }
 
 .center-form {
-    padding-top: 10px;
     margin: 0 auto;
     max-width: 70%;
 }
@@ -358,7 +357,6 @@ button[type='submit'] {
 
 @media(min-width: 992px) {
     .center-form {
-        padding-top: 30px;
         min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
