@@ -42,6 +42,7 @@ const reposInformationHTML = (repos) => {
 const fetchGitHubInformation = (event) => {
     $('#hide-me').addClass('d-none');
     var username = $('#gh-username').val();
+
     if (!username) {
         $('#gh-repo-data').html('');
         $('#gh-user-data').html(`<h4 class="my-3">Search bar is empty!</h4>`);
@@ -60,10 +61,10 @@ const fetchGitHubInformation = (event) => {
             $('#gh-user-data').html(userInformationHTML(userData));
             $('#gh-repo-data').html(reposInformationHTML(reposData));
         }, function (errorResponse) {
-            if (errorResponse.status === 404) {
+            if (errorResponse.status === 404) { // not found
                 $('#gh-user-data').html(`<h2>No information found for ${username}</h2>`);
             } else if (errorResponse.status === 403) { // not allowed
-                var resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset')*1000);
+                var resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset') * 1000);
                 $('#gh-user-data').html(`<h4>API calls limit reached.<br>Next round at: ${resetTime.toLocaleTimeString()}</h4>`)
             } else {
                 console.log(errorResponse);
